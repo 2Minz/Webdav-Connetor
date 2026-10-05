@@ -1,0 +1,32 @@
+﻿Webdav Connetor 0.2.2 (Windows 11 x64)
+
+이 설치 프로그램에는 Webdav Connetor, .NET 10 Windows Desktop Runtime,
+공식 rclone 1.75.1 및 공식 WinFsp 2.1 설치 패키지가 포함됩니다.
+인터넷 연결 없이 설치할 수 있습니다.
+
+Webdav Connetor는 현재 사용자 계정에 설치되며 일반 사용자 권한으로 실행됩니다.
+WinFsp가 없으면 Windows 관리자 권한 요청(UAC)이 표시될 수 있습니다.
+설치 전에 열려 있는 NAS 파일을 저장하고 기존 드라이브 마운트를 해제하세요.
+
+제거 프로그램은 Webdav Connetor 드라이브를 먼저 정상 종료합니다.
+미전송 캐시가 있으면 파일 전송 완료 전까지 제거를 보류합니다.
+제거 완료 시 현재 사용자의 프로필, 저장된 인증정보, 로그, 캐시,
+자동 시작 레지스트리 항목, 바로 가기 및 프로그램 파일을 삭제합니다.
+작업 스케줄러 항목이나 별도 백그라운드 서비스는 생성하지 않습니다.
+다른 프로그램이나 사용자가 만든 스케줄러·rclone 설정은 변경하지 않습니다.
+
+이 설치 프로그램이 새로 설치한 WinFsp는 제거 시 함께 제거됩니다.
+이전에 설치되어 있던 WinFsp는 보존됩니다.
+함께 설치한 WinFsp를 이후 다른 프로그램도 사용한다면 제거 전에 확인하세요.
+WinFsp 설치/제거 후 Windows 재시작이 필요할 수 있습니다.
+
+Webdav Connetor와 해당 소스는 MIT License로 배포됩니다.
+rclone: MIT License, https://rclone.org
+WinFsp - Windows File System Proxy, Copyright (C) Bill Zissimopoulos
+https://github.com/winfsp/winfsp
+WinFsp: GPLv3 with FLOSS exception. 공식 MSI를 수정 없이 포함합니다.
+
+이 버전은 실제 NAS 환경에서 사용자가 직접 확인할 테스트 배포본입니다.
+
+
+0.2.2은 요청에 따라 컴파일/패키징만 수행했습니다. 설치·실행·마운트·읽기·쓰기 및 화면 검증은 사용자가 직접 수행합니다.
