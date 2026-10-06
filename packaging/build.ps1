@@ -29,7 +29,7 @@ try {
     Copy-Item -Path (Join-Path $vendorRoot '*-License.txt') -Destination (Join-Path $publish 'licenses')
     Copy-Item -LiteralPath 'packaging\INSTALL-NOTES.txt' -Destination (Join-Path $publish 'INSTALL-NOTES.txt')
     New-Item -ItemType Directory -Path dist -Force | Out-Null
-    $sourceArchive = Join-Path $projectRoot 'dist\Webdav-Connetor-0.2.2-source.zip'
+    $sourceArchive = Join-Path $projectRoot 'dist\Webdav-Connetor-0.2.3-source.zip'
     $sourceStage = Join-Path $projectRoot '.tmp\source-stage'
     if ([IO.Path]::GetFullPath($sourceStage) -ne [IO.Path]::GetFullPath((Join-Path $projectRoot '.tmp\source-stage'))) { throw 'Unexpected source staging path' }
     if (Test-Path $sourceStage) { Remove-Item -LiteralPath $sourceStage -Recurse -Force }
@@ -50,7 +50,7 @@ try {
     Copy-Item -LiteralPath $sourceArchive -Destination (Join-Path $publish 'licenses\UnionDrive-source.zip')
     & $compiler /Qp (Join-Path $PSScriptRoot 'UnionDrive.iss')
     if ($LASTEXITCODE -ne 0) { throw 'Inno Setup compilation failed' }
-    Get-Item dist/Webdav-Connetor-Setup-0.2.2-win-x64.exe | Get-FileHash | ForEach-Object {
+    Get-Item dist/Webdav-Connetor-Setup-0.2.3-win-x64.exe | Get-FileHash | ForEach-Object {
         "$($_.Hash)  $([IO.Path]::GetFileName($_.Path))" | Set-Content -LiteralPath (Join-Path $projectRoot 'dist\SHA256SUMS.txt') -Encoding ascii
     }
 } finally { Pop-Location }

@@ -1,4 +1,4 @@
-﻿#define AppVersion "0.2.2"
+﻿#define AppVersion "0.2.3"
 #define WinFspProduct "{C79D9B29-3AF0-45B3-9DB9-226F3C2D2204}"
 
 [Setup]

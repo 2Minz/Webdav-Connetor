@@ -36,7 +36,6 @@ internal sealed class ProfileForm : Form
         address.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 40));
         address.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 80));
         url.Dock = port.Dock = DockStyle.Fill;
-        url.PlaceholderText = "uniontech.synology.me";
         folder.PlaceholderText = "비우면 서버 루트에 연결";
         address.Controls.Add(url, 0, 0);
         address.Controls.Add(new Label { Text = "포트", AutoSize = true, Anchor = AnchorStyles.Left }, 1, 0);

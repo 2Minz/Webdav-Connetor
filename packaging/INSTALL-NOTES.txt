@@ -1,4 +1,4 @@
-﻿Webdav Connetor 0.2.2 (Windows 11 x64)
+﻿Webdav Connetor 0.2.3 (Windows 11 x64)
 
 이 설치 프로그램에는 Webdav Connetor, .NET 10 Windows Desktop Runtime,
 공식 rclone 1.75.1 및 공식 WinFsp 2.1 설치 패키지가 포함됩니다.
@@ -29,4 +29,4 @@ WinFsp: GPLv3 with FLOSS exception. 공식 MSI를 수정 없이 포함합니다.
 이 버전은 실제 NAS 환경에서 사용자가 직접 확인할 테스트 배포본입니다.
 
 
-0.2.2은 요청에 따라 컴파일/패키징만 수행했습니다. 설치·실행·마운트·읽기·쓰기 및 화면 검증은 사용자가 직접 수행합니다.
+0.2.3은 요청에 따라 컴파일/패키징만 수행했습니다. 설치·실행·마운트·읽기·쓰기 및 화면 검증은 사용자가 직접 수행합니다.
