@@ -50,7 +50,7 @@ try {
     Copy-Item -LiteralPath $sourceArchive -Destination (Join-Path $publish 'licenses\UnionDrive-source.zip')
     & $compiler /Qp (Join-Path $PSScriptRoot 'UnionDrive.iss')
     if ($LASTEXITCODE -ne 0) { throw 'Inno Setup compilation failed' }
-    Get-Item dist/Webdav-Connetor-Setup-0.2.3-win-x64.exe | Get-FileHash | ForEach-Object {
-        "$($_.Hash)  $([IO.Path]::GetFileName($_.Path))" | Set-Content -LiteralPath (Join-Path $projectRoot 'dist\SHA256SUMS.txt') -Encoding ascii
-    }
+    Get-Item dist/Webdav-Connetor-Setup-0.2.3-win-x64.exe,$sourceArchive | Get-FileHash | ForEach-Object {
+        "$($_.Hash)  $([IO.Path]::GetFileName($_.Path))"
+    } | Set-Content -LiteralPath (Join-Path $projectRoot 'dist\SHA256SUMS.txt') -Encoding ascii
 } finally { Pop-Location }

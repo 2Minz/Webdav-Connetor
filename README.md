@@ -4,7 +4,7 @@ Windows 11 x64에서 여러 Synology NAS의 HTTPS WebDAV를 드라이브로 연�
 
 ## 설치와 사용
 
-배포 파일: [Webdav Connetor 0.2.2 installer](https://github.com/2Minz/Webdav-Connetor/releases/download/v0.2.2/Webdav-Connetor-Setup-0.2.2-win-x64.exe)
+배포 파일: [Webdav Connetor 0.2.3 installer](https://github.com/2Minz/Webdav-Connetor/releases/download/v0.2.3/Webdav-Connetor-Setup-0.2.3-win-x64.exe)
 
 [최신 배포](https://github.com/2Minz/Webdav-Connetor/releases/latest) · [소스 저장소](https://github.com/2Minz/Webdav-Connetor)
 
